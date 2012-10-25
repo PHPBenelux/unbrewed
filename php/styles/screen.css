@@ -1,0 +1,269 @@
+body {
+	margin:0;
+	padding:0;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	color: #333333;
+}
+
+/* headings */
+h1 {
+	font-size: 2em;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	margin-left: 15px;
+}
+h2 {
+	font-size: 1.7em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 15px;
+}
+h3 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 15px;
+	font-size: 1.5em;
+	text-decoration:underline;
+}
+
+/*links */
+a {
+	text-decoration:none;
+	font-variant:small-caps;
+	color: #0099CC;
+	margin:0;
+	padding:0;
+}
+a:hover {
+	color: #996600;
+	text-decoration: underline;
+}
+
+/* paragraph defaults */
+p {
+	margin:0;
+	padding:0;
+}
+
+/* list defaults */
+ul {
+	list-style-type: disc;
+	list-style-image: url(../images/li_image.gif);
+}
+ol {
+	list-style-type:decimal-leading-zero;	
+}
+li {
+	line-height: 1em;
+}
+
+/* blockqoute style */
+blockquote {
+background-color:#dddddd;
+color:#666666;
+border-top:#666666 solid 1px;
+border-bottom:#666666 solid 2px;
+font-style:italic;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:1.1em;
+text-align:justify;
+padding:3px;
+}
+#content blockquote p {
+	margin:0;
+	padding:0;
+}
+
+/* wraps the entire content */
+#wrapper {
+	margin: 0 auto;
+}
+
+
+/* the header div sets up the background image and text */
+#header {
+	background-attachment: scroll;
+	background-image: url(../images/coffee-beans.jpg);
+	background-repeat: no-repeat;
+	background-position: center right;
+	min-height: 139px;
+	height: 139px;
+}
+	#header_text {
+		display:block;	
+		font-size: 3em;
+		font-variant: small-caps;
+		color: #333333;
+		padding-top:.6em;
+		margin-left:25px;
+	}
+	#header #slogan_shadow {
+		font-size:1.3em;
+		color: #FFFFFF;
+		margin-top:0;
+		clear:both;
+		margin-left:220px;
+		line-height:1em;
+	}
+	#header #slogan {
+	color: #0099CC;
+	position: relative;
+	top: -20px;
+	left: 1px;
+	}
+
+/* this sets up the 100 width wrapper and sets the background colour for the main content */
+#content_wrapper {
+	clear:both;
+	float:left;
+	background-color: #e9e3de;
+	width: 100%;
+	border-top-width: 5px;
+	border-top-style: solid;
+	border-top-color: #666666;
+}
+/* tis sets the width of the actual content to a fixed 800 pixels */
+#content_block {
+	width: 800px;
+	margin: 0 auto;
+	position:relative;
+}
+
+/* side bar is the left column */
+#side_bar {
+	float: left;
+	width: 190px;
+}
+
+/* content (right column) div style*/
+#content {
+	margin-left:10px;
+	float:right;
+	width:590px;
+}
+
+
+/* Styles dealing with the sidemenu navigation */
+.sidemenu {
+	margin:0;
+	margin-bottom:1em;
+	margin-top:1.5em;
+	padding:0;
+	list-style-type: none;
+	list-style-image:none;
+}
+.sidemenu a {
+	width: 180px;
+	display: block;
+	line-height: 1.6em;
+	font-size: 1.1em;
+	text-transform:uppercase;
+	padding-left:10px;
+	background-color: #e9e3de;
+	border-bottom-color: #CCCCCC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #666666;
+}
+#side_bar .sidemenu a:hover {
+	text-decoration:none;
+	background-color: #F0E3DA;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #0099CC;
+	border-bottom-color: #0099CC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	color: #996600;
+}
+#side_bar .active_sidemenu {
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #0099CC;
+	border-bottom-color: #0099CC;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+/* end sidemenu styles
+
+
+
+/*styles for the content paragraphs */
+#content p {
+	text-align:justify;
+	line-height:1.3em;
+	margin-bottom: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#content li {
+	font-size:1.1em;
+	margin-left:25px;
+	color:#000;
+}
+/* the extra_content class styles the extra content boxes */
+.extra_content {
+	color:#666666; 
+	background-color:#dddddd; 
+	border:2px solid #0099CC; 
+	margin-top:1.5em;
+	margin-left:2px;
+	margin-left:2px;
+	margin-bottom:1em;
+	font-size:1em;
+	width:186px;
+	float:right;
+	clear:both;
+}
+
+/*	this is specifically for some styles only used on the extra_content boxes within the content area      	*/
+/*	changes made here will only affect the boxes within the content 										*/
+#content .extra_content { 
+	margin-left:15px;
+	margin-right:15px;
+}
+
+/* extra content geading style */
+.extra_content h1 {
+	display:block;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:1.2em;
+	margin:0;
+}
+
+/* extra content paragraph styling, changes made here will affect all boxes */
+#content .extra_content p, .extra_content p {
+	padding:0;
+	margin-top:1.2em;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:.2em;
+	text-align:justify;
+}
+
+/*	this controls the bottom image */
+#bottom_image {
+	clear:both;
+	background-attachment: scroll;
+	background-image: url(../images/stain_top.jpg); /* change this to your own desired image */
+	background-repeat: no-repeat;
+	background-position: center left;
+	min-height: 73px; 
+	height: 73px; 
+	min-width: 800px; 
+}
+
+/*	this is the footer */
+#footer {
+	background-color: #666666;
+	color: #e9e3de;
+	text-align:center;
+	font-size:.8em;
+	font-variant:small-caps;
+}
+#footer a:hover {
+	color: #F0E3DA;
+	text-decoration:none;
+}
