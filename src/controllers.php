@@ -12,6 +12,27 @@ $app->get('/', function () use ($app) {
 ->bind('homepage')
 ;
 
+$app->get('/api/coffees', function() use ($app) {
+    return new JsonResponse(json_encode(array(
+        1 => array(
+            'id' => 1,
+            'name' => 'Douwe Egberts',
+            'location' => 'Netherlands',
+            'roast' => 'medium',
+            'granularity' => 'fine',
+            'rating' => 5
+        ),
+        2 => array(
+            'id' => 2,
+            'name' => 'Something else',
+            'location' => 'Spain',
+            'roast' => 'dark',
+            'granularity' => 'fine',
+            'rating' => 4
+        ),
+    )));
+});
+
 $app->error(function (\Exception $e, $code) use ($app) {
     if ($app['debug']) {
         return;
