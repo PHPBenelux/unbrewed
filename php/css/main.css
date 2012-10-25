@@ -1,3 +1,27 @@
-body {
-
+/* 404 page */
+.error404 {
+    width: 500px;
+    height: 617px;
+    padding-left: 450px;
+    background: url('../images/mw.png') top left no-repeat;
+}
+.error-404-speech-bubble {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 150px;
+    border: 3px solid #000;
+    border-radius: 7px;
+}
+.error404 h1 {
+    color: #24B9FF;
+    font-size: 42px;
+    font-family: 'Museo700Regular';
+    margin-bottom: 8px;
+}
+.error404 h2 {
+    color: #6AC00E;
+    font-size: 22px;
+    font-family: 'Museo300Regular';
+    margin-bottom: 20px;
 }
