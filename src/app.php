@@ -17,5 +17,13 @@ $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
 
     return $twig;
 }));
+$mongo = new Mongo('mongodb://127.11.221.129:27017/', array(
+    'connect'  => true,
+    'username' => 'admin',
+    'password' => 'WSvyUln6D5Fu',
+));;
+$mongodb = new MongoDB($mongo, 'unbrewed');
+$mongocollection = new MongoCollection($mongodb, 'unbrewd');
+$app['mongo'] = $mongodb;
 
 return $app;
