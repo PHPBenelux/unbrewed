@@ -1,5 +1,5 @@
 {
-    "hash": "cd5e6b8ff97f6f69ecc5b590eb7bc7fa",
+    "hash": "01b2f757927ec5dd4e399659e7c34c43",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -51,6 +51,61 @@
             ]
         },
         {
+            "name": "phly/phly-mongo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/weierophinney/PhlyMongo",
+                "reference": "d4d088ed362cedf8d9f25ee0274532fc86362383"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/weierophinney/PhlyMongo/zipball/d4d088ed362cedf8d9f25ee0274532fc86362383",
+                "reference": "d4d088ed362cedf8d9f25ee0274532fc86362383",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "ext-mongo": "*",
+                "zendframework/zend-paginator": "2.*",
+                "zendframework/zend-servicemanager": "2.*",
+                "zendframework/zend-stdlib": "2.*"
+            },
+            "require-dev": {
+                "zendframework/zend-loader": "2.*",
+                "zendframework/zend-modulemanager": "2.*",
+                "zendframework/zend-mvc": "2.*"
+            },
+            "time": "1350677486",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "PhlyMongo": "src/",
+                    "PhlyMongoTest": "test/"
+                },
+                "classmap": [
+                    "./"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Matthew Weier O'Phinney",
+                    "email": "matthew@weierophinney.net",
+                    "homepage": "http://mwop.net/"
+                }
+            ],
+            "description": "ZF2 Module providing services and paginators surrounding MongoDB",
+            "homepage": "https://github.com/weierophinney/PhlyMongo",
+            "keywords": [
+                "mongodb",
+                "zend",
+                "zf2",
+                "module",
+                "mongo"
+            ]
+        },
+        {
             "name": "pimple/pimple",
             "version": "dev-master",
             "source": {
@@ -67,7 +122,6 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1347278988",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -94,7 +148,8 @@
             "keywords": [
                 "dependency injection",
                 "container"
-            ]
+            ],
+            "time": "1347278988"
         },
         {
             "name": "silex/silex",
@@ -141,7 +196,6 @@
                 "symfony/css-selector": ">=2.1,<2.3-dev",
                 "symfony/dom-crawler": ">=2.1,<2.3-dev"
             },
-            "time": "1351110265",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -172,7 +226,8 @@
             "homepage": "http://silex.sensiolabs.org",
             "keywords": [
                 "microframework"
-            ]
+            ],
+            "time": "1351110265"
         },
         {
             "name": "symfony/browser-kit",
@@ -200,7 +255,6 @@
             "suggest": {
                 "symfony/process": "2.1.*"
             },
-            "time": "1349363877",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -227,7 +281,8 @@
                 }
             ],
             "description": "Symfony BrowserKit Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1349363877"
         },
         {
             "name": "symfony/class-loader",
@@ -250,7 +305,6 @@
             "require-dev": {
                 "symfony/finder": "2.1.*"
             },
-            "time": "1349363877",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -277,7 +331,8 @@
                 }
             ],
             "description": "Symfony ClassLoader Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1349363877"
         },
         {
             "name": "symfony/config",
@@ -297,7 +352,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1350717030",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -324,7 +378,8 @@
                 }
             ],
             "description": "Symfony Config Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/console",
@@ -344,7 +399,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1350916632",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -371,7 +425,8 @@
                 }
             ],
             "description": "Symfony Console Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350916632"
         },
         {
             "name": "symfony/css-selector",
@@ -391,7 +446,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1349363877",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -418,7 +472,8 @@
                 }
             ],
             "description": "Symfony CssSelector Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1349363877"
         },
         {
             "name": "symfony/dom-crawler",
@@ -498,7 +553,6 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/http-kernel": "2.1.*"
             },
-            "time": "1349363877",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -525,7 +579,8 @@
                 }
             ],
             "description": "Symfony EventDispatcher Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1349363877"
         },
         {
             "name": "symfony/finder",
@@ -545,7 +600,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1350717030",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -572,7 +626,8 @@
                 }
             ],
             "description": "Symfony Finder Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/form",
@@ -603,7 +658,6 @@
                 "symfony/validator": "2.1.*",
                 "symfony/http-foundation": "2.1.*"
             },
-            "time": "1350717096",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -630,7 +684,8 @@
                 }
             ],
             "description": "Symfony Form Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717096"
         },
         {
             "name": "symfony/http-foundation",
@@ -650,7 +705,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1350717030",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -678,7 +732,8 @@
                 }
             ],
             "description": "Symfony HttpFoundation Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/http-kernel",
@@ -718,7 +773,6 @@
                 "symfony/dependency-injection": "2.1.*",
                 "symfony/finder": "2.1.*"
             },
-            "time": "1350916632",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -745,7 +799,8 @@
                 }
             ],
             "description": "Symfony HttpKernel Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350916632"
         },
         {
             "name": "symfony/locale",
@@ -768,7 +823,6 @@
             "suggest": {
                 "ext-intl": ">=5.3.3"
             },
-            "time": "1350717030",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -795,7 +849,8 @@
                 }
             ],
             "description": "Symfony Locale Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/monolog-bridge",
@@ -817,7 +872,6 @@
                 "monolog/monolog": "1.*",
                 "symfony/http-kernel": "2.1.*"
             },
-            "time": "1350717030",
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
@@ -844,7 +898,8 @@
                 }
             ],
             "description": "Symfony Monolog Bridge",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/options-resolver",
@@ -864,7 +919,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1349363877",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -896,7 +950,8 @@
                 "configuration",
                 "config",
                 "options"
-            ]
+            ],
+            "time": "1349363877"
         },
         {
             "name": "symfony/process",
@@ -916,7 +971,6 @@
             "require": {
                 "php": ">=5.3.3"
             },
-            "time": "1350717030",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -943,7 +997,8 @@
                 }
             ],
             "description": "Symfony Process Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/routing",
@@ -974,7 +1029,6 @@
                 "symfony/config": "2.2.*",
                 "symfony/yaml": "2.2.*"
             },
-            "time": "1351093287",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1001,7 +1055,8 @@
                 }
             ],
             "description": "Symfony Routing Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1351093287"
         },
         {
             "name": "symfony/security",
@@ -1039,7 +1094,6 @@
                 "symfony/validator": "2.1.*",
                 "symfony/routing": "2.1.*"
             },
-            "time": "1350916632",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1066,7 +1120,8 @@
                 }
             ],
             "description": "Symfony Security Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350916632"
         },
         {
             "name": "symfony/translation",
@@ -1094,7 +1149,6 @@
                 "symfony/config": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1350717030",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1121,7 +1175,8 @@
                 }
             ],
             "description": "Symfony Translation Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350717030"
         },
         {
             "name": "symfony/twig-bridge",
@@ -1158,7 +1213,6 @@
                 "symfony/yaml": "2.1.*",
                 "symfony/security": "2.1.*"
             },
-            "time": "1349363877",
             "type": "symfony-bridge",
             "extra": {
                 "branch-alias": {
@@ -1185,7 +1239,8 @@
                 }
             ],
             "description": "Symfony Twig Bridge",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1349363877"
         },
         {
             "name": "symfony/validator",
@@ -1215,7 +1270,6 @@
                 "symfony/http-foundation": "2.1.*",
                 "symfony/yaml": "2.1.*"
             },
-            "time": "1350916632",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1242,7 +1296,8 @@
                 }
             ],
             "description": "Symfony Validator Component",
-            "homepage": "http://symfony.com"
+            "homepage": "http://symfony.com",
+            "time": "1350916632"
         },
         {
             "name": "twig/twig",
@@ -1261,7 +1316,6 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1350737598",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1291,6 +1345,111 @@
             "homepage": "http://twig.sensiolabs.org",
             "keywords": [
                 "templating"
+            ],
+            "time": "1350737598"
+        },
+        {
+            "name": "zendframework/zendframework",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/zendframework/zf2.git",
+                "reference": "0abbba9f1171e5c7cd7997f4d185d5ffe0cd7c5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/zendframework/zf2/zipball/0abbba9f1171e5c7cd7997f4d185d5ffe0cd7c5f",
+                "reference": "0abbba9f1171e5c7cd7997f4d185d5ffe0cd7c5f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "replace": {
+                "zendframework/zend-acl": "self.version",
+                "zendframework/zend-authentication": "self.version",
+                "zendframework/zend-barcode": "self.version",
+                "zendframework/zend-cache": "self.version",
+                "zendframework/zend-captcha": "self.version",
+                "zendframework/zend-code": "self.version",
+                "zendframework/zend-config": "self.version",
+                "zendframework/zend-console": "self.version",
+                "zendframework/zend-crypt": "self.version",
+                "zendframework/zend-db": "self.version",
+                "zendframework/zend-di": "self.version",
+                "zendframework/zend-dom": "self.version",
+                "zendframework/zend-eventmanager": "self.version",
+                "zendframework/zend-feed": "self.version",
+                "zendframework/zend-file": "self.version",
+                "zendframework/zend-filter": "self.version",
+                "zendframework/zend-form": "self.version",
+                "zendframework/zend-http": "self.version",
+                "zendframework/zend-inputfilter": "self.version",
+                "zendframework/zend-json": "self.version",
+                "zendframework/zend-ldap": "self.version",
+                "zendframework/zend-loader": "self.version",
+                "zendframework/zend-log": "self.version",
+                "zendframework/zend-mail": "self.version",
+                "zendframework/zend-markup": "self.version",
+                "zendframework/zend-math": "self.version",
+                "zendframework/zend-memory": "self.version",
+                "zendframework/zend-mime": "self.version",
+                "zendframework/zend-modulemanager": "self.version",
+                "zendframework/zend-mvc": "self.version",
+                "zendframework/zend-navigation": "self.version",
+                "zendframework/zend-paginator": "self.version",
+                "zendframework/zend-progressbar": "self.version",
+                "zendframework/zend-serializer": "self.version",
+                "zendframework/zend-server": "self.version",
+                "zendframework/zend-servicemanager": "self.version",
+                "zendframework/zend-session": "self.version",
+                "zendframework/zend-soap": "self.version",
+                "zendframework/zend-stdlib": "self.version",
+                "zendframework/zend-tag": "self.version",
+                "zendframework/zend-text": "self.version",
+                "zendframework/zend-uri": "self.version",
+                "zendframework/zend-validator": "self.version",
+                "zendframework/zend-view": "self.version",
+                "zendframework/zend-xmlrpc": "self.version",
+                "zendframework/zend-escaper": "self.version",
+                "zendframework/zend-i18n": "self.version"
+            },
+            "require-dev": {
+                "doctrine/common": ">=2.1",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "doctrine/common": "Doctrine\\Common >=2.1 for annotation features",
+                "ext-intl": "ext/intl for i18n features",
+                "zendframework/zendservice-recaptcha": "ZendService\\ReCaptcha for rendering ReCaptchas in Zend\\Captcha and/or Zend\\Form",
+                "zendframework/zendpdf": "ZendPdf for creating PDF representations of barcodes",
+                "pecl-weakref": "Implementation of weak references for Zend\\Stdlib\\CallbackHandler"
+            },
+            "time": "1351122517",
+            "bin": [
+                "bin/classmap_generator.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Zend\\": "library/",
+                    "ZendTest\\": "tests/"
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Zend Framework 2",
+            "homepage": "http://framework.zend.com/",
+            "keywords": [
+                "framework",
+                "zf2"
             ]
         }
     ],
@@ -1299,7 +1458,7 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": [
-
-    ]
+    "stability-flags": {
+        "phly/phly-mongo": 20
+    }
 }
