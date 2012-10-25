@@ -2,6 +2,9 @@
 
 namespace Unbrewed\Entity;
 
+/**
+ * Represents a type of coffee
+ */
 class Coffee
 {
     protected $id;
@@ -15,7 +18,7 @@ class Coffee
     protected $granularity;
 
     /**
-     * @return id
+     * @return integer id
      */
     public function getId()
     {
@@ -33,7 +36,7 @@ class Coffee
     }
 
     /**
-     * @return name
+     * @return string name
      */
     public function getName()
     {
@@ -51,7 +54,7 @@ class Coffee
     }
 
     /**
-     * @return location
+     * @return string location
      */
     public function getLocation()
     {
@@ -69,7 +72,7 @@ class Coffee
     }
 
     /**
-     * @return roast
+     * @return string roast
      */
     public function getRoast()
     {
@@ -79,19 +82,20 @@ class Coffee
     /**
      * @param $roast
      * @return self
+     * @throws \InvalidArgumentException
      */
     public function setRoast($roast)
     {
         $allowedRoasts = array('light', 'dark');
         if (!in_array($roast, $allowedRoasts)) {
-            throw \InvalidArgumentException('Invalid roast type. Allowed types are light and dark.');
+            throw new \InvalidArgumentException('Invalid roast type. Allowed types are light and dark.');
         }
         $this->roast = $roast;
         return $this;
     }
 
     /**
-     * @return granularity
+     * @return string granularity
      */
     public function getGranularity()
     {
@@ -101,12 +105,13 @@ class Coffee
     /**
      * @param $granularity
      * @return self
+     * @throws \InvalidArgumentException
      */
     public function setGranularity($granularity)
     {
         $allowedGrains = array('fine', 'normal', 'coarse');
         if (!in_array($granularity, $allowedGrains)) {
-            throw \InvalidArgumentException('Invalid granularity type. Allowed types are fine, normal, and coarse.');
+            throw new \InvalidArgumentException('Invalid granularity type. Allowed types are fine, normal, and coarse.');
         }
         $this->granularity = $granularity;
         return $this;
