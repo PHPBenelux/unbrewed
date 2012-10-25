@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
+/** @var $app \Silex\Application */
 $app->get('/', function () use ($app) {
     return $app['twig']->render('index.html', array());
 })
