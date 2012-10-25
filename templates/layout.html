@@ -1,23 +1,65 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>{% block title '' %} - My Silex Application</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>{% block title '' %} : Unbrewed</title>
+    <link href="/styles/screen.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <link href="{{ app.request.basepath }}/css/main.css" rel="stylesheet" type="text/css" />
+<body>
+<!--Wrapper around all the content -->
+<div id="wrapper">
 
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
-            _gaq.push(['_trackPageview']);
+    <!--start of the header -->
+    <div id="header">
+        <div id="header_text">Unbrewed</div>
+        <div id="slogan_shadow">wake up and smell the coffee<div id="slogan">wake up and smell the coffee</div></div>
+    </div>
+    <!--end of header -->
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
-        </script>
-    </head>
-    <body>
-        {% block content %}{% endblock %}
-    </body>
+    <!--this is the content background -->
+    <div id="content_wrapper">
+
+        <!--this wraps the content and fixes the width to 800px -->
+        <div id="content_block">
+
+            <!-- the content is the right content section that holds the main text -->
+            <div id="content">
+                {% block content %}{% endblock %}
+            </div>
+
+
+
+
+            <!-- this is the side bar, it floats to the left and is used for the navigation and extra content -->
+            <div id="side_bar">
+                <ul class="sidemenu">
+                    <li><a href="/" class="active_sidemenu">home</a></li>
+<!--                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">blog</a></li>-->
+                </ul>
+<!--                <div class="extra_content">
+                    <h1>extra heading</h1>
+                    <p>this is an extra content div, you could take this out if you had no need for it</p>
+                </div>
+                <div class="extra_content">
+                    <h1>news</h1>
+                    <p>or you can add as many of these extra content <a href="#">boxes</a> as you need</p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="bottom_image">
+        <p id="footer">&copy; ZendCon Community Team | Design by <a href="http://www.visual-aid.co.uk" title="Open Source Template Designed by Visual Aid">Visual-Aid</a> | <a href="http://validator.w3.org/check?uri=referer" title="Validate this page's XHTML">XHTML 1.0 Strict</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate this page's CSS">CSS</a> valid </p>
+    </div>
+
+
+</div>
+
+</body>
 </html>
